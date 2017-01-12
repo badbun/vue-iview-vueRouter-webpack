@@ -9,7 +9,7 @@ module.exports = {
     // 入口
     entry: {
         main: './src/main',
-        vendors: ['vue', 'vue-router']
+        vendors: ['vue', 'vue-router','vue-resource','iview']
     },
     // 输出
     output: {
@@ -37,7 +37,8 @@ module.exports = {
         // 别名，可以直接使用别名来代表设定的路径以及其他
         alias: {
             filter: path.join(__dirname, './src/filters'),
-            components: path.join(__dirname, './src/components')
+            components: path.join(__dirname, './src/components'),
+            config:path.join(__dirname, './src/config')
         }
     },
     plugins: [

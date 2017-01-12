@@ -15,9 +15,10 @@
   "author": "Aresn",
   "license": "MIT",
   "dependencies": {
+    "iview": "^0.9.13",
     "vue": "^1.0.26",
-    "vue-router": "^0.7.13",
-    "iview": "^0.9.13"
+    "vue-resource": "^1.0.3",
+    "vue-router": "^0.7.13"
   },
   "devDependencies": {
     "autoprefixer-loader": "^2.0.0",
