@@ -1,5 +1,5 @@
 {
-  "name": "iview-project",
+  "name": "vue-iview-vueRouter-webpack",
   "version": "1.0.2",
   "description": "A base project using Vue.js1.0、Vue-Router、webpack and with iView.",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iview/iview-project.git"
+    "url": "git+https://github.com/badbun/vue-iview-vueRouter-webpack.git"
   },
   "author": "Aresn",
   "license": "MIT",
@@ -46,7 +46,7 @@
     "webpack": "^1.13.1"
   },
   "bugs": {
-    "url": "https://github.com/iview/iview-project/issues"
+    "url": "https://github.com/badbun/vue-iview-vueRouter-webpack/issues"
   },
-  "homepage": "https://www.iviewui.com"
+  "homepage": "https://github.com/badbun/vue-iview-vueRouter-webpack#readme"
 }

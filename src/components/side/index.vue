@@ -24,7 +24,7 @@
     <ul class="nav">
         <li v-link="{path: '/index',activeClass: 'active'}">申报表填写</li>
         <!--<li v-link="{path: '/menu1/step1',activeClass: 'active'}">申报表发送</li>-->
-        <li v-link="{path: '/sbbfs',activeClass: 'active'}">申报表发送</li>
+        <li id="test" v-link="{path: '/menu1/step1',activeClass: 'active'}">申报表发送</li>
         <li v-link="{path: '/sbjgcx',activeClass: 'active'}">申报结果查询</li>
     </ul>
 </template>

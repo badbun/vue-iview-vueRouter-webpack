@@ -1,8 +1,9 @@
 <template>
     this is first{{aaa}}
+    <div style="border:1px solid red;color:#000" @click="ent">跳啊跳</div>
 </template>
 <script>
-    import config from '../../../config/config';
+    import config from 'config/config';
 
     export default {
         ready: function() {
@@ -10,7 +11,7 @@
                 "aaa": "1",
                 "bbb": "2"
             };
-            config.test(params, function (response) {
+            config.service.test(params, function (response) {
                 console.log(response);
             })
         },
@@ -20,7 +21,9 @@
             }
         },
         methods: {
-
+            ent: function (){
+                this.$route.router.go('/menu1/step2');
+            }
         }
     }
 </script>

@@ -4,24 +4,9 @@
 import Env from './env';
 import VueResource from 'vue-resource';
 import Vue from 'vue';
-import { Message,LoadingBar} from 'iview';
 
-
-//请求拦截
-Vue.http.interceptors.push( (request,next) => {
-    if(mock) request.method = "GET";
-    //请求发送前的处理逻辑
-    //Message.loading("请求中...",0);
-    LoadingBar.start();
-    next( (response) => {
-        //Message.destroy();
-        LoadingBar.finish();
-        return response;
-
-    })
-});
 let mock = true,
-    urlObj = {},
+    apiUrl = {},
     url;
 
 let baseUrl = {
@@ -36,12 +21,13 @@ let api = {
 
 for (let key in api) {
     url = mock ? baseUrl.mockUrl + api[key] + '.json' : baseUrl.rootUrl + api[key];
-    urlObj[key] = url;
+    apiUrl[key] = url;
 }
 
 let config = {
     env: Env,
-    apiUrl: urlObj,
+    mock: mock,
+    apiUrl: apiUrl,
     SUCCCODE: "00000000",
 
     //请求资源
